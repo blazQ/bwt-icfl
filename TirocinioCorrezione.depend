@@ -1,0 +1,56 @@
+# depslib dependency file v1.0
+1638265615 source:c:\users\user\desktop\tirocinio\tirociniocorrezione\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<fcntl.h>
+	"bwt.h"
+	"factorizations.h"
+	"utils.h"
+
+1638187475 source:c:\users\user\desktop\tirocinio\tirociniocorrezione\factorizations.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"utils.h"
+
+1634804293 c:\users\user\desktop\tirocinio\tirociniocorrezione\utils.h
+
+1634804180 source:c:\users\user\desktop\tirocinio\tirociniocorrezione\utils.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+
+1634733625 c:\users\user\desktop\tirocinio\tirociniocorrezione\factorizations.h
+	"utils.h"
+
+1634720668 source:c:\users\user\desktop\tirocinio\tirociniocorrezione\cylist.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+
+1634750215 c:\users\user\desktop\tirocinio\tirociniocorrezione\cylist.h
+
+1638298396 source:c:\users\user\desktop\tirocinio\tirociniocorrezione\bwt.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"factorizations.h"
+	"utils.h"
+	"cylist.h"
+
+1634804388 c:\users\user\desktop\tirocinio\tirociniocorrezione\bwt.h
+	"utils.h"
+
+1636116596 c:\users\user\desktop\tirocinio\tirociniocorrezione\compression.h
+
+1636116759 source:c:\users\user\desktop\tirocinio\tirociniocorrezione\compression.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"factorizations.h"
+	"utils.h"
+	"cylist.h"
+

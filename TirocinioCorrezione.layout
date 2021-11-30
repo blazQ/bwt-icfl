@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<FileVersion major="1" minor="0" />
+	<ActiveTarget name="Release" />
+	<File name="factorizations.h" open="1" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="182" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="factorizations.c" open="1" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="6" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="2195" topLine="215" />
+		</Cursor>
+	</File>
+	<File name="main.c" open="1" top="1" tabpos="6" split="0" active="1" splitpos="0" zoom_1="8" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="691" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="cylist.h" open="0" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="392" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="utils.c" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="606" topLine="44" />
+		</Cursor>
+	</File>
+	<File name="cylist.c" open="0" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="5" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1162" topLine="12" />
+		</Cursor>
+	</File>
+	<File name="bwt.c" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="7" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="22301" topLine="234" />
+		</Cursor>
+		<Folding>
+			<Collapse line="11" />
+			<Collapse line="23" />
+			<Collapse line="27" />
+			<Collapse line="31" />
+			<Collapse line="34" />
+			<Collapse line="41" />
+			<Collapse line="66" />
+			<Collapse line="109" />
+			<Collapse line="114" />
+			<Collapse line="119" />
+			<Collapse line="226" />
+			<Collapse line="246" />
+			<Collapse line="251" />
+			<Collapse line="256" />
+			<Collapse line="263" />
+			<Collapse line="278" />
+			<Collapse line="282" />
+			<Collapse line="295" />
+			<Collapse line="303" />
+			<Collapse line="320" />
+			<Collapse line="345" />
+			<Collapse line="349" />
+			<Collapse line="361" />
+			<Collapse line="366" />
+			<Collapse line="372" />
+			<Collapse line="405" />
+			<Collapse line="475" />
+			<Collapse line="478" />
+			<Collapse line="507" />
+			<Collapse line="534" />
+			<Collapse line="538" />
+			<Collapse line="542" />
+			<Collapse line="546" />
+		</Folding>
+	</File>
+	<File name="utils.h" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="374" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="bwt.h" open="1" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="271" topLine="0" />
+		</Cursor>
+	</File>
+</CodeBlocks_layout_file>
