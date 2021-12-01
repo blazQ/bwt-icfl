@@ -16,7 +16,7 @@ int main(int argc, char* argv[])
     /**
         TEST SUL CORPUS DELL'ARTICOLO
     **/
-    fprintf( stderr, "IBWTZ on " );
+    fprintf( stderr, "BWTZ on " );
     if ( argc > 1 ) {
         freopen( argv[ 1 ], "rb", stdin );
         fprintf( stderr, "%s", argv[ 1 ] );
@@ -39,7 +39,7 @@ int main(int argc, char* argv[])
     do {
         itemsread = fread (buffer, sizeof(char), BLOCK_SIZE, stdin);
         buffer[itemsread] = '\0';
-        char* bwt = ibwtz(buffer);
+        char* bwt = bwtz(buffer);
         fprintf(stdout, "%s", bwt);
     } while (itemsread);
     return 0;
