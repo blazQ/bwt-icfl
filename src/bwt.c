@@ -53,10 +53,10 @@ char* bwtEncode(const char* word){
     char* bwtWord = malloc(length+2);
     bwtWord[0] = '\0';
 
-    for(int i=0; i<length+1; i++){
+    for(size_t i=0; i<length+1; i++){
         strncat(bwtWord, last(table[i]), 1);
     };
-    for(int i=0; i<length; i++){
+    for(size_t i=0; i<length; i++){
         free(table[i]);
     }
     free(table);
@@ -76,15 +76,15 @@ char* bwtDecode(const char* bwt){
      //initializing table
      //inner for: moving column right and filling first column
      //outer for: sorting table
-     for(int i=0; i<len; i++){
-            for(int j=0; j<len; j++){
+     for(size_t i=0; i<len; i++){
+            for(size_t j=0; j<len; j++){
                 memmove(table[j] +1, table[j], len);
                 table[j][0] = bwt[j];
             }
            sortConjTable(table, len);
      }
 
-     int returnIndex;
+     int returnIndex = 0;
      for(size_t j = 0; j<len; j++)
         if((table[j][len-1] - '$') == 0) {
             returnIndex = j;
@@ -97,7 +97,7 @@ char* bwtDecode(const char* bwt){
     decodedString[len-1] = '\0';
 
     //clean memory
-    for(int i=0; i<len; i++){
+    for(size_t i=0; i<len; i++){
         free(table[i]);
     }
     free(table);
@@ -121,12 +121,12 @@ char* getInfCmpKey(const char *s, size_t key, size_t oldSize){
         //per azzerare il blocco uso calloc
     char* sKey = calloc(key+1, sizeof(char));
     strcat(sKey, s);
-    //in sKey ora c'è solo la stringa piccola
+    //in sKey ora c'ï¿½ solo la stringa piccola
     int addedChar = 0;
     int charToAdd = key-oldSize;
     const char * z = s;
 
-    /* finché il numero di caratteri aggiunti non pareggia quello dei caratteri da aggiungere,
+    /* finchï¿½ il numero di caratteri aggiunti non pareggia quello dei caratteri da aggiungere,
         alla stringa sKey aggiungi di volta in volta un carattere a partire dalla fine, preso dalla stringa
         di partenza. Se dopo l'aggiunta il puntatore alla stringa di partenza si trova sul carattere di terminazione,
         ricomincia da capo. */
@@ -236,7 +236,7 @@ char* bwts(const char* bwt){
     bwtEncoded[len_bwt] = '\0';
 
     //freeing memory allocated to the table
-    for(int i=0; i<len_bwt; i++){
+    for(size_t i=0; i<len_bwt; i++){
         free(table[i]);
     }
     free(table);
@@ -400,7 +400,7 @@ node_t* getSplittedFactors (const char* word, size_t len){
         if(border > 0 && factorLen > 1){
                 if(border == factorLen){
                     //a^k
-                    for(int i=0; i < factorLen; i++){
+                    for(size_t i=0; i < factorLen; i++){
                         char* factor;
                         factor = calloc(1+1, sizeof(*factor));
                         factor[0] = factorizations->factor[i];
@@ -513,7 +513,7 @@ int strInfcmpDescending (const char *s1, const char *s2){
             return result;
         }
         //Anche nella BWTZ, nonostante io debba ordinare al contrario
-        //(e quindi dal più grande al più piccolo) se due stringhe sono uguali secondo l'ordine infinito, la più piccola rimane davanti
+        //(e quindi dal piï¿½ grande al piï¿½ piccolo) se due stringhe sono uguali secondo l'ordine infinito, la piï¿½ piccola rimane davanti
 }
 
 static int InfiniteLexiCompareDescending(const void* a, const void* b){
@@ -603,7 +603,7 @@ char* bwtz (char* word){
     bwtEncoded[len_bwt] = '\0';
 
     //freeing memory allocated to the table
-    for(int i=0; i<len_bwt; i++){
+    for(size_t i=0; i<len_bwt; i++){
         free(table[i]);
     }
     free(table);
@@ -612,7 +612,6 @@ char* bwtz (char* word){
     for(size_t i = 0; i < len_bwt; i++){
         free(tableSort[i].factor);
     }
-    free(tableSort);
 
     return bwtEncoded;
 }

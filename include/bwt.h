@@ -2,6 +2,7 @@
 #define BWT_H_INCLUDED
 
 #include "utils.h"
+#include <stdlib.h>
 
 char* bwtEncode(const char* word);
 char* bwtDecode(const char* bwt);

@@ -29,10 +29,6 @@ int main(int argc, char* argv[])
     } else
         fprintf( stderr, "stdout" );
     fprintf( stderr, "\n" );
-#if !defined( unix )
-    setmode( fileno( stdin ), O_BINARY );
-    setmode( fileno( stdout ), O_BINARY );
-#endif
 
     char buffer[BLOCK_SIZE];
     long itemsread;

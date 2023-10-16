@@ -11,7 +11,7 @@ struct Cycle {
 
 typedef struct Cycle * cycleNode;
 
-cycleNode createcycleNode(){
+cycleNode createcycleNode(void){
     cycleNode temp;
     temp = (cycleNode) malloc(sizeof(struct Cycle));
     temp->next = NULL;
@@ -56,7 +56,7 @@ struct CycleList {
 
 typedef struct CycleList* cyListNode;
 
-cyListNode createCyListNode(){
+cyListNode createCyListNode(void){
     cyListNode temp;
     temp = (cyListNode) malloc(sizeof(struct CycleList));
     temp->next = NULL;
